@@ -4,15 +4,25 @@ I have created this repository to help anyone create and host their website on G
 
 See an example of a website created using this repository at https://s-agarwl.github.io/
 
-## 0. Creating and Deploying your GitHub repository:
+## Table of Contents
 
-- Fork the respository at https://github.com/s-agarwl/easyAcademicPortfolio
-- Name of your repository should be "yourGitHubUsername.github.io". Uncheck "include only main branch". Ensure that the repository is public.
-- Navigate to "Actions" on top/left sidebar. Click "I understand my workflows, go ahead and enable them".
-- Go to "Settings". From the left sidebar, navigate to "Pages". Under "Build and deployment", select source as "gh-pages" from the dropdown menu. Click "Save".
-- Wait for a minute. your website should be now visible at yourGitHubUsername.github.io
+1. [Creating and Deploying your GitHub repository](#creating-and-deploying-your-github-repository)
+2. [Workflow](#workflow)
+3. [Customizing Your Website](#customizing-your-website)
+4. [Adding New Publications](#adding-new-publications)
+5. [Adding Markdown Content to Publications](#adding-markdown-content-to-publications)
+6. [Deployment with GitHub Pages](#easy-deployment-with-github-pages)
 
-## 1. Workflow:
+## Creating and Deploying your GitHub repository
+
+1. Fork the repository at [https://github.com/s-agarwl/easyAcademicPortfolio](https://github.com/s-agarwl/easyAcademicPortfolio)
+2. Name your repository "yourGitHubUsername.github.io". Ensure it's public.
+3. Navigate to "Actions" on top/left sidebar. Click "I understand my workflows, go ahead and enable them".
+4. Go to "Settings". From the left sidebar, navigate to "Pages". Under "Build and deployment", select source as "gh-pages" from the dropdown menu. Click
+   "Save".
+5. Wait a few minutes. Your website should be visible at yourGitHubUsername.github.io
+
+## Workflow:
 
 I see following three workflows:
 
@@ -20,7 +30,7 @@ I see following three workflows:
 2. If you know how to work with GitHub repositories but not adept at compiling code using `npm`, then you can clone the respository on your local machine.Just focus on the contents inside `public` and edit the files as instructed below. you would then need to push the changes to your repository and GitHub actions will do the rest.
 3. If you are a coder, then you can clone the respository on your local machine, make the changes in the source code, implement your own functionalities, and push the changes to the GitHub repository.
 
-## 2. Customizing Your website with config.json
+## Customizing Your Website
 
 The `config.json` file is where you personalize your website. Here's a detailed guide:
 
@@ -171,7 +181,7 @@ The `specialSections` object defines additional pages:
 
 The `orderOfSectionsInHeader` array determines the order of sections in the navigation menu.
 
-## 3. Adding New Publications
+## Adding New Publications
 
 1. Open your BibTeX file (specified in `bibtexPath`).
 2. Add a new entry using this format:
@@ -216,7 +226,7 @@ The `orderOfSectionsInHeader` array determines the order of sections in the navi
 
 After uploading, refresh your website to see the changes. No rebuild is needed for new publications.
 
-## 4. Adding Markdown Content to Publications
+## Adding Markdown Content to Publications
 
 To add detailed Markdown content to a publication:
 
@@ -236,7 +246,7 @@ If changes don't appear:
 
 For the richest publication pages, include as much information as possible in your BibTeX entries and utilize the Markdown feature for detailed content.
 
-## 6. Easy Deployment with GitHub Pages
+## Easy Deployment with GitHub Pages
 
 Your website should already be up an drunning on the url yourGitHubUsername.github.io. Whenever you make changes (through either of the three workflows mentioned in point 1 above), you would need to push the changes to the GitHub repository.
 The deployment will be handled by GitHub build pipeline and the website will be updated in 1-2 minutes. You may want to refresh or clear your browser cache if the changes are not visible.
