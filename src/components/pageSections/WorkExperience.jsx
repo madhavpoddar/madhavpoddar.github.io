@@ -11,7 +11,7 @@ const WorkExperience = ({ config }) => {
       <div className="relative">
         {config.sections.workExperience.content.map((exp, index) => (
           <div key={index} className="mb-12 flex">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center z-10">
               <FaBriefcase className="text-white" />
             </div>
             <div className="ml-8 bg-white shadow-md rounded-lg p-6 flex-grow">
